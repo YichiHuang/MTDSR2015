@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>MTDSR2015 by YichiHuang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">MTDSR2015</h1>
+      <h2 class="project-tagline">A mandarin corpus for text-dependent speaker recognition.</h2>
+      <a href="https://github.com/YichiHuang/MTDSR2015" class="btn">View on GitHub</a>
+      <a href="https://github.com/YichiHuang/MTDSR2015/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/YichiHuang/MTDSR2015/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="introduction-to-mtdsr2015-database" class="anchor" href="#introduction-to-mtdsr2015-database" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction to MTDSR2015 database</h2>
+
+<p>MTDSR2015 is the first public and free mandarin database recorded by smartphones, which is published by <strong><em>Advanced Data &amp; Signal Processing Laboratory</em></strong> at Peking University.
+The original recording was conducted in 2015 by Junhong Liu. The original name was 'MTDSR2015', standing for <em>Mandarin corpus for Text-dependent Speaker Recognition</em>. This database was supported by Prof. Yuexian Zou. We hope to provide a toy database for new researchers in the field of speaker verification and speech recognition. The database is totally free to academic users.
+The MTDSR2015 database aims to provide the community with sufficient mandarin corpus for prompted text speaker verification research for smart phone applications. It currently contains <strong><em>52940</em></strong> audio recording from <strong><em>181</em></strong> speakers including <strong><em>102</em></strong> male speakers and <strong><em>79</em></strong> female speakers. Each speaker was recorded with <strong><em>five</em></strong> parts:</p>
+
+<blockquote>
+<ol>
+<li><p>Twenty 8-digit sequences</p></li>
+<li><p>Fifteen poems</p></li>
+<li><p>Fifteen news sentences</p></li>
+<li><p>Twenty to thirty phrases and daily expressions unequally </p></li>
+<li><p>Two lyrics</p></li>
+</ol>
+</blockquote>
+
+<p>The 8-digit sequences are randomly generated and other materials are selected randomly from the corresponding pre-defined text database.
+Considering the popularity in China market, four top sailing smart phone models are selected as voice recorders including iPhone 5C, Samsung Note3, HUAWEI mate7 and XM4.
+For specific applications, the population is selected to be as representative as possible of the target population and the database designed for generic research purposes tend to cover the largest possible population and scenario. For MTDSR2015 database, we consider the demography of the population in terms of age and region which are often considered as two main criteria that affect the speaker verification engines. Selected speakers were between 22 and 51 years old to cover the target population who use smart phones more often. Additionally, we consider the effect of the regions that speakers come from. We try to cover the target provinces where people mainly speak mandarin, which has covered 28 provinces and areas in China.
+In MTDSR2015, we considered channel variability problem based on four mainstream smart phone types in China market, which are iPhone 5C, Samsung Note3, HUAWEI mate7 and XM4.</p>
+
+<h2>
+<a id="content" class="anchor" href="#content" aria-hidden="true"><span class="octicon octicon-link"></span></a>CONTENT</h2>
+
+<p>The entire package involves the full set of speech and language resources required to establish a Chinese speech recognition system.</p>
+
+<blockquote>
+<p>|MTDSR2015</p>
+
+<p>|         |-HWmate7</p>
+
+<p>|                  |-spk001</p>
+
+<p>|                          |-digits</p>
+
+<p>|                                  |-001_01.wav</p>
+
+<p>|                                  |-001_02.wav</p>
+
+<p>|                                  |-001_03.wav</p>
+
+<p>|                                  |-001_...</p>
+
+<p>|                                  |-001_20.wav
+|                          |-poem
+|                                  |-001_21.wav
+|                                  |-001_22.wav
+|                                  |-001_23.wav
+|                                  |-001_...
+|                                  |-001_35.wav
+|                  |-spk002
+|                  |-spk003
+|                  |-...
+|                  |-spk128
+|         |-iphone5
+|         |-Samsung Note2
+|         |-XM4
+|         |-wav_data
+|         |data.ls</p>
+</blockquote>
+
+<pre><code>  wav       :signals including the training/cv/test sets.
+  spkXXX    :stands for speaker #XXX.
+  ls        :configuration files which maintains path routes.
+</code></pre>
+
+<h2>
+<a id="performance" class="anchor" href="#performance" aria-hidden="true"><span class="octicon octicon-link"></span></a>PERFORMANCE</h2>
+
+<p>We call for comtetition on this database. We conducted experiments on MTDSR2015 and RSR2015 to evaluate the performance of our proposed CDDD-SVS with different channel compensation methods which refer to WCCN, NAP and LDA.Results have demonstrated the effectiveness of our proposed CDDD-SVS developed with ivector followed byand WCCN, which achieves the best performance onwith MTDSR2015.
+Researchers are welcomed to challenge and give advice to the current state-of-the-art!</p>
+
+<h2>
+<a id="local-download" class="anchor" href="#local-download" aria-hidden="true"><span class="octicon octicon-link"></span></a>LOCAL DOWNLOAD</h2>
+
+<p>Not yet available</p>
+
+<h2>
+<a id="publicdownload" class="anchor" href="#publicdownload" aria-hidden="true"><span class="octicon octicon-link"></span></a>PUBLIC　DOWNLOAD</h2>
+
+<p>For public download, you must fill an <a href="yichihuang.github.io">application form</a> first.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>LICENSE</h2>
+
+<p>All the resources contained in the database are free for research institutes and individuals. No commerical usage is permitted. </p>
+
+<p>We are very happy if you cite the following paper in your publications:
+MTDSR2015 : A Free mandarin corpus for text-dependent speaker recognition. [pdf]</p>
+
+<h2>
+<a id="people" class="anchor" href="#people" aria-hidden="true"><span class="octicon octicon-link"></span></a>PEOPLE</h2>
+
+<p>Junhong Liu, Yuexian Zou, Yichi Huang <a href="https://github.com/ADSP" class="user-mention">@ADSP</a>, Peking University Shenzhen Graduate School.</p>
+
+<h2>
+<a id="contactor" class="anchor" href="#contactor" aria-hidden="true"><span class="octicon octicon-link"></span></a>CONTACTOR</h2>
+
+<p>Junhong Liu,Yuexian Zou
+ADSP, Peking University Shenzhen Graduate School.
+<a href="mailto:zouyx@pkusz.edu.cn">zouyx@pkusz.edu.cn</a></p>
+
+<p>ROOM A-306
+Peking University Shenzhen Graduate School</p>
+
+<p><a href="http://adsp.szpku.edu.cn/">http://adsp.szpku.edu.cn/</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/YichiHuang/MTDSR2015">MTDSR2015</a> is maintained by <a href="https://github.com/YichiHuang">YichiHuang</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
